@@ -153,8 +153,6 @@ function movieSearch(title) {
     	}
     });
 }
-
-
  
 function doWhatItSays() {
 	fs.readFile("random.txt", "utf8", function(err, data) {
@@ -166,3 +164,8 @@ function doWhatItSays() {
 	    process.argv[3] = readFileSong;
 	    liriBot();
 	});
+}
+function logCommand(entry) {
+  // Add the command value to the log file.
+  fs.appendFile("log.txt", ", " + entry);
+}
