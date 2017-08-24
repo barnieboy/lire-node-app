@@ -168,4 +168,7 @@ function doWhatItSays() {
 function logCommand(entry) {
   // Add the command value to the log file.
   fs.appendFile("log.txt", ", " + entry);
+
+
+  liriBot();
 }
